@@ -1,7 +1,61 @@
+/*
+=============== 
+Variables
+===============
+*/
+
+:root {
+  /* Other colors */
+  --clr-bg-accent: #fdfcee;
+
+  /* Layout */
+  --max-width: 1170px;
+
+  /* Animation */
+  --transition: all 0.3s linear;
+}
+
+/*
+=============== 
+Global Styles
+===============
+*/
+
 *,
 ::after,
 ::before {
   margin: 0;
   border: 0;
   box-sizing: border-box;
+}
+
+body {
+  font-family: "Noto Serif", sans-serif;
+  background-color: var(--clr-bg-accent);
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+@media (min-width: 800px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+}
+
+/*
+=============== 
+Global Classes
+===============
+*/
+
+.btn-transparent {
+  background: transparent;
+  border: transparent;
+  cursor: pointer;
 }
