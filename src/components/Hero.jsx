@@ -16,7 +16,7 @@ const Hero = () => {
 };
 
 const HeroWrapper = styled.section`
-  margin-top: 5rem;
+  padding: 5rem 0;
 
   .hero-container {
     position: relative;

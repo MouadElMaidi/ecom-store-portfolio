@@ -5,6 +5,19 @@ Variables
 */
 
 :root {
+  /* dark shades of primary color*/
+  --clr-primary-1: #ccfbf1;
+  --clr-primary-2: #99f6e4;
+  --clr-primary-3: #5eead4;
+  --clr-primary-4: #2dd4bf;
+  /* primary/main color */
+  --clr-primary-5: #14b8a6;
+  /* lighter shades of primary color */
+  --clr-primary-6: #0d9488;
+  --clr-primary-7: #0f766e;
+  --clr-primary-8: #115e59;
+  --clr-primary-9: #134e4a;
+  --clr-primary-10: #042f2e;
   /* Other colors */
   --clr-bg-accent: #fdfcee;
 
@@ -13,6 +26,8 @@ Variables
 
   /* Animation */
   --transition: all 0.3s linear;
+
+  --border: 0.06rem solid #cbcac0;
 }
 
 /*
@@ -40,6 +55,16 @@ ul {
 
 a {
   text-decoration: none;
+  color: black;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  text-transform: capitalize;
+  font-weight: 500;
 }
 
 @media (min-width: 800px) {
@@ -53,6 +78,31 @@ a {
 Global Classes
 ===============
 */
+
+/* section */
+.section {
+  padding: 6rem 0;
+}
+.section-center {
+  width: 95vw;
+  margin: 0 auto;
+}
+
+.btn {
+  background: transparent;
+  padding: 1.2rem 3rem;
+  /* display: inline-block; */
+  font-weight: 300;
+  transition: var(--transition);
+  font-size: 0.875rem;
+  cursor: pointer;
+  border: var(--border);
+}
+
+.btn:hover {
+  color: white;
+  background: var(--clr-primary-9);
+}
 
 .btn-transparent {
   background: transparent;

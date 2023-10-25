@@ -1,33 +1,21 @@
-import Hero from "../components/Hero";
+import {
+  Hero,
+  AboutSection,
+  FeaturedCarousel,
+  MagazineReviews,
+  Footer,
+  Newsletter,
+} from "../components";
 
 const Home = () => {
   return (
     <>
       <Hero />
-      <p>
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex nesciunt
-        iure inventore tempora, minima suscipit perspiciatis explicabo aliquid
-        provident quos! Illo quod odio perspiciatis ullam alias laudantium nulla
-        quidem temporibus.
-      </p>
-      <p>
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex nesciunt
-        iure inventore tempora, minima suscipit perspiciatis explicabo aliquid
-        provident quos! Illo quod odio perspiciatis ullam alias laudantium nulla
-        quidem temporibus.
-      </p>
-      <p>
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex nesciunt
-        iure inventore tempora, minima suscipit perspiciatis explicabo aliquid
-        provident quos! Illo quod odio perspiciatis ullam alias laudantium nulla
-        quidem temporibus.
-      </p>
-      <p>
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex nesciunt
-        iure inventore tempora, minima suscipit perspiciatis explicabo aliquid
-        provident quos! Illo quod odio perspiciatis ullam alias laudantium nulla
-        quidem temporibus.
-      </p>
+      <AboutSection />
+      <FeaturedCarousel />
+      <MagazineReviews />
+      <Newsletter />
+      <Footer />
     </>
   );
 };
