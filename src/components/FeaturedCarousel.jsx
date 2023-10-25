@@ -1,16 +1,22 @@
-import { useRef, useState } from "react";
+import { useContext, useRef, useState } from "react";
 import { styled } from "styled-components";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { BsChevronLeft, BsChevronRight } from "react-icons/bs";
 
-import { bestsellers } from "../utils/constants";
 import Product from "./Product";
+import { ProductsContext } from "../context/products_context";
 
 const windowWidth = window.innerWidth;
 
 const FeaturedCarousel = () => {
+  const {
+    // products_loading: loading,
+    // products_error: error,
+    bestsellers,
+  } = useContext(ProductsContext);
+
   const [showBtns, setShowBtns] = useState(false);
   const [activeSlide, setActiveSlide] = useState(0);
 

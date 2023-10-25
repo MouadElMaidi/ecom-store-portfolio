@@ -2,12 +2,12 @@ import { styled } from "styled-components";
 
 import { formatPrice } from "../utils/helpers";
 
-const Product = ({ title, price, imgUrl }) => {
+const Product = ({ name, price, imgUrl }) => {
   return (
     <Wrapper>
-      <img src={imgUrl} alt={title} />
+      <img src={imgUrl} alt={name} />
       <footer>
-        <a href="/">{title}</a>
+        <a href="/">{name}</a>
         <p>{formatPrice(price)}</p>
       </footer>
     </Wrapper>

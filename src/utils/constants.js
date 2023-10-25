@@ -1,42 +1,42 @@
 export const bestsellers = [
   {
     id: 0,
-    title: "Prod1",
+    name: "Prod1",
     price: 25099,
     imgUrl:
       "https://images.pexels.com/photos/1598507/pexels-photo-1598507.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
   },
   {
     id: 1,
-    title: "Prod2",
+    name: "Prod2",
     price: 25099,
     imgUrl:
       "https://images.pexels.com/photos/1598507/pexels-photo-1598507.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
   },
   {
     id: 2,
-    title: "Prod3",
+    name: "Prod3",
     price: 25099,
     imgUrl:
       "https://images.pexels.com/photos/1598507/pexels-photo-1598507.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
   },
   {
     id: 3,
-    title: "Prod4",
+    name: "Prod4",
     price: 250999,
     imgUrl:
       "https://images.pexels.com/photos/8532616/pexels-photo-8532616.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
   },
   {
     id: 4,
-    title: "Pord5",
+    name: "Pord5",
     price: 250999,
     imgUrl:
       "https://images.pexels.com/photos/1598507/pexels-photo-1598507.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
   },
   {
     id: 5,
-    title: "Prod6",
+    name: "Prod6",
     price: 250999,
     imgUrl:
       "https://images.pexels.com/photos/1598507/pexels-photo-1598507.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
@@ -77,3 +77,5 @@ export const pressReviews = [
     text: '"A sanctuary for those who seek the epitome of fashion finesse and elegance."',
   },
 ];
+
+export const products_url = "/.netlify/functions/products";
