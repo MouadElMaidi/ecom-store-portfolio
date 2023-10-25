@@ -23,7 +23,7 @@ exports.handler = async function () {
         reviews,
         category,
       } = fields;
-      console.log(images);
+
       const { url } = images[0];
       return {
         id,
